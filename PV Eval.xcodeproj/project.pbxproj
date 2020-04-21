@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		937337DD244F8D290070023C /* PVPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937337DC244F8D290070023C /* PVPanel.swift */; };
+		937337DF244FA4020070023C /* DegradationCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937337DE244FA4020070023C /* DegradationCalculatorModel.swift */; };
 		93983640243EABB80073CC4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9398363F243EABB80073CC4E /* AppDelegate.swift */; };
 		93983642243EABB80073CC4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93983641243EABB80073CC4E /* SceneDelegate.swift */; };
-		93983644243EABB80073CC4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93983643243EABB80073CC4E /* ViewController.swift */; };
 		93983647243EABB80073CC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93983645243EABB80073CC4E /* Main.storyboard */; };
 		93983649243EABBA0073CC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93983648243EABBA0073CC4E /* Assets.xcassets */; };
 		9398364C243EABBA0073CC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9398364A243EABBA0073CC4E /* LaunchScreen.storyboard */; };
 		93983657243EABBA0073CC4E /* PV_EvalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93983656243EABBA0073CC4E /* PV_EvalTests.swift */; };
 		93983662243EABBA0073CC4E /* PV_EvalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93983661243EABBA0073CC4E /* PV_EvalUITests.swift */; };
+		93D80E11244F7AF900DADA6F /* DegradationCalculationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D80E10244F7AF900DADA6F /* DegradationCalculationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		937337DC244F8D290070023C /* PVPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVPanel.swift; sourceTree = "<group>"; };
+		937337DE244FA4020070023C /* DegradationCalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationCalculatorModel.swift; sourceTree = "<group>"; };
 		9398363C243EABB80073CC4E /* PV Eval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PV Eval.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9398363F243EABB80073CC4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93983641243EABB80073CC4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		93983643243EABB80073CC4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93983646243EABB80073CC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93983648243EABBA0073CC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9398364B243EABBA0073CC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		9398365D243EABBA0073CC4E /* PV EvalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PV EvalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93983661243EABBA0073CC4E /* PV_EvalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PV_EvalUITests.swift; sourceTree = "<group>"; };
 		93983663243EABBA0073CC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D80E10244F7AF900DADA6F /* DegradationCalculationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationCalculationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				9398363F243EABB80073CC4E /* AppDelegate.swift */,
 				93983641243EABB80073CC4E /* SceneDelegate.swift */,
-				93983643243EABB80073CC4E /* ViewController.swift */,
+				937337DC244F8D290070023C /* PVPanel.swift */,
+				93D80E10244F7AF900DADA6F /* DegradationCalculationTableViewController.swift */,
+				937337DE244FA4020070023C /* DegradationCalculatorModel.swift */,
 				93983645243EABB80073CC4E /* Main.storyboard */,
 				93983648243EABBA0073CC4E /* Assets.xcassets */,
 				9398364A243EABBA0073CC4E /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93983644243EABB80073CC4E /* ViewController.swift in Sources */,
+				937337DF244FA4020070023C /* DegradationCalculatorModel.swift in Sources */,
+				93D80E11244F7AF900DADA6F /* DegradationCalculationTableViewController.swift in Sources */,
+				937337DD244F8D290070023C /* PVPanel.swift in Sources */,
 				93983640243EABB80073CC4E /* AppDelegate.swift in Sources */,
 				93983642243EABB80073CC4E /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9YCJFXQQ7;
 				INFOPLIST_FILE = "PV Eval/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J9YCJFXQQ7;
 				INFOPLIST_FILE = "PV Eval/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
