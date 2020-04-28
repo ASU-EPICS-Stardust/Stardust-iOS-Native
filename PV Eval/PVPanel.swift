@@ -76,6 +76,7 @@ fileprivate struct PVPanelProfiler {
         var profile: PVPanelProfile?
         var error: PVPanelProfilerError?
         
+        //TODO: These calculations are going to have to be asynchronous especially if we pull data from a weather api.
         //Calculate predicted degradation
         if let lastTest = panel.recordedTests.last, let panelArea = panel.specifications[.moduleArea] {
             var ratedEff = panel.specifications[.ratedEfficiency]
@@ -85,7 +86,7 @@ fileprivate struct PVPanelProfiler {
             
             if let ratedEff = ratedEff {
                 // Compute the degradation
-                //TODO: Actually get irradiance data
+                //TODO: Actually get irradiance data instead of just using the STC data here
                 let irradiance: Double = 1000
                 let degradation = 1 - (lastTest.powerOutput / ((ratedEff / 100) * irradiance * panelArea))
                 profile = PVPanelProfile(forPanel: panel, degradation: degradation)
